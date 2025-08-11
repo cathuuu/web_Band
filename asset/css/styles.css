@@ -18,9 +18,25 @@
 html{
     font-family: Arial, Helvetica, sans-serif;
 }
+
 #main {
 
 }
+
+#header {
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+}
+
+#nav{
+    display: inline-block;
+}
+
 #nav, .subnav{
 list-style-type: none;
 }
@@ -71,17 +87,33 @@ background-color: #a47373;
 
 #nav .subnav a{
     color: #000;
-    padding: 0 16px;
+    padding: 0 12px;
     line-height: 38px;
 }
 
-#header {
-    height: 46px;
-    background-color: black;
+#nav .nav-arrow-down{
+    font-size:  14px;
+}
 
+#header .search-button{
+    float: right;
+    padding: 0 21px;
+    cursor: pointer;
+}
+
+#header .search-icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+#header .search-button:hover{
+background-color: #f44336;
 }
 
 #slider {
+    margin-top: 46px;
+    padding-top: 50%;
 
 }
 
