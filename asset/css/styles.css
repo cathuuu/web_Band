@@ -23,6 +23,12 @@ html{
 
 }
 
+.clean{
+    clear: both;
+}
+.text-white{
+    color: #fff !important;
+}
 #header {
     height: 46px;
     background-color: black;
@@ -31,6 +37,7 @@ html{
     left: 0;
     right: 0;
     height: 46px;
+    z-index: 1;
 }
 
 #nav{
@@ -58,7 +65,6 @@ list-style-type: none;
    color: #fff;
    text-transform: uppercase;
 }
-
 
 #nav li a{
     text-decoration: none;
@@ -101,6 +107,7 @@ background-color: #a47373;
     cursor: pointer;
 }
 
+/* Search button */
 #header .search-icon{
     color: #fff;
     font-size: 20px;
@@ -111,14 +118,133 @@ background-color: #a47373;
 background-color: #f44336;
 }
 
+/* Slider fix để không bị header che */
 #slider {
+    position: relative;
     margin-top: 46px;
     padding-top: 50%;
+    background: url('/asset/img/slider/chicago.jpg') top center  no-repeat;
+    background-size : cover
+}
 
+/* căn giữa */
+#slider .text-content{
+    position: absolute;
+    bottom: 48px;
+    color: #fff;
+    /* left: 50px;
+    transform: translateX(-50%); */
+    text-align: center;
+    width: 100%;
+    
+}
+
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-desciption{
+    font-size: 15px;
+    margin-top: 25px;
 }
 
 #content {
 
+
+}
+
+#content .content-section{
+    width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content .section-heading
+{
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading{
+    font-size: 15;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6; /*do trong suot*/
+
+}
+
+#content .section-heading,
+#content .section-sub-heading
+{
+    text-align: center;
+}
+
+#content .about-text{
+    margin-top: 25px;
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: justify;
+
+}
+
+#content .members-list
+{
+    margin-top: 48px;
+}
+
+#content .avatar{
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+}
+
+#content .member-name{
+    font-size: 15px;
+
+}
+
+#content .member-item{
+    float: left;
+    width: calc(100% /3);
+    text-align: center;
+}
+/*Tour section*/
+.tour-section{
+    background-color: #000;
+}
+
+.ticket-list{
+    background-color: #fff;
+    margin-top: 40px;
+    list-style: none;
+}
+
+.ticket-list li{
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ticket-list .sold-out{
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.ticket-list .quantity{
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 25px;
+    margin-top: -3px;
 }
 
 #footer {
